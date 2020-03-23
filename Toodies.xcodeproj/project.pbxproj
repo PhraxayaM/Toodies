@@ -13,6 +13,8 @@
 		CDBE3FCC24294A4000E850E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBE3FCB24294A4000E850E9 /* Assets.xcassets */; };
 		CDBE3FCF24294A4000E850E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBE3FCE24294A4000E850E9 /* Preview Assets.xcassets */; };
 		CDBE3FD224294A4000E850E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBE3FD024294A4000E850E9 /* LaunchScreen.storyboard */; };
+		CDBE3FDA24294E7200E850E9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE3FD924294E7200E850E9 /* MainViewController.swift */; };
+		CDBE3FDC24294EA200E850E9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE3FDB24294EA200E850E9 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CDBE3FCE24294A4000E850E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDBE3FD124294A4000E850E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDBE3FD324294A4000E850E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBE3FD924294E7200E850E9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CDBE3FDB24294EA200E850E9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				CDBE3FC524294A3D00E850E9 /* AppDelegate.swift */,
 				CDBE3FC724294A3D00E850E9 /* SceneDelegate.swift */,
+				CDBE3FDB24294EA200E850E9 /* MainView.swift */,
+				CDBE3FD924294E7200E850E9 /* MainViewController.swift */,
 				CDBE3FC924294A3E00E850E9 /* ContentView.swift */,
 				CDBE3FCB24294A4000E850E9 /* Assets.xcassets */,
 				CDBE3FD024294A4000E850E9 /* LaunchScreen.storyboard */,
@@ -149,6 +155,8 @@
 				CDBE3FC624294A3D00E850E9 /* AppDelegate.swift in Sources */,
 				CDBE3FC824294A3D00E850E9 /* SceneDelegate.swift in Sources */,
 				CDBE3FCA24294A3E00E850E9 /* ContentView.swift in Sources */,
+				CDBE3FDC24294EA200E850E9 /* MainView.swift in Sources */,
+				CDBE3FDA24294E7200E850E9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
