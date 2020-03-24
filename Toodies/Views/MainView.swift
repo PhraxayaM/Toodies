@@ -21,13 +21,23 @@ class MainView: UIView {
     
     func setup(){
         setupView()
-        
+        setupConstraints()
     }
+    
     
     func setupView(){
+    addSubview(backgroundImage)
     }
     
+   
        
+    let backgroundImage: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "Bienvenu")
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+    
     
     
 }

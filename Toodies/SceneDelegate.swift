@@ -20,13 +20,13 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
     // Create the SwiftUI view that provides the window contents.
-    let navigationController3 = UINavigationController(rootViewController: MainViewController())
+    let navigationController = UINavigationController(rootViewController: TabBarViewController())
 
     // Use a UIHostingController as window root view controller.
     if let windowScene = scene as? UIWindowScene {
         let window = UIWindow(windowScene: windowScene)
         
-        window.rootViewController = navigationController3
+        window.rootViewController = navigationController
         self.window = window
         window.makeKeyAndVisible()
     }
