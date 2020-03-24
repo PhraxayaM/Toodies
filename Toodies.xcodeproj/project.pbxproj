@@ -10,6 +10,7 @@
 		CD51841C242982C80019FC51 /* MainViewContraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD51841B242982C80019FC51 /* MainViewContraints.swift */; };
 		CD51841E24299A770019FC51 /* MatchesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD51841D24299A770019FC51 /* MatchesCell.swift */; };
 		CD51842024299C0A0019FC51 /* MatchesViewContraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD51841F24299C0A0019FC51 /* MatchesViewContraint.swift */; };
+		CD518424242A762A0019FC51 /* RotateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD518423242A762A0019FC51 /* RotateImage.swift */; };
 		CDBE3FC624294A3D00E850E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE3FC524294A3D00E850E9 /* AppDelegate.swift */; };
 		CDBE3FC824294A3D00E850E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBE3FC724294A3D00E850E9 /* SceneDelegate.swift */; };
 		CDBE3FCC24294A4000E850E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBE3FCB24294A4000E850E9 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		CD51841B242982C80019FC51 /* MainViewContraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewContraints.swift; sourceTree = "<group>"; };
 		CD51841D24299A770019FC51 /* MatchesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesCell.swift; sourceTree = "<group>"; };
 		CD51841F24299C0A0019FC51 /* MatchesViewContraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewContraint.swift; sourceTree = "<group>"; };
+		CD518423242A762A0019FC51 /* RotateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateImage.swift; sourceTree = "<group>"; };
 		CDBE3FC224294A3D00E850E9 /* Toodies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toodies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBE3FC524294A3D00E850E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDBE3FC724294A3D00E850E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,23 @@
 			path = Constraints;
 			sourceTree = "<group>";
 		};
+		CD518421242A760E0019FC51 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD518422242A761C0019FC51 /* UIImage */,
+				CD51841A242982BB0019FC51 /* Constraints */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD518422242A761C0019FC51 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				CD518423242A762A0019FC51 /* RotateImage.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		CDBE3FB924294A3D00E850E9 = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +98,7 @@
 		CDBE3FC424294A3D00E850E9 /* Toodies */ = {
 			isa = PBXGroup;
 			children = (
-				CD51841A242982BB0019FC51 /* Constraints */,
+				CD518421242A760E0019FC51 /* Extensions */,
 				CDBE3FE22429725600E850E9 /* Views */,
 				CDBE3FE12429725000E850E9 /* VC */,
 				CDBE3FC524294A3D00E850E9 /* AppDelegate.swift */,
@@ -201,6 +220,7 @@
 				CDBE3FDE24296F8100E850E9 /* TabBarViewController.swift in Sources */,
 				CDBE3FDA24294E7200E850E9 /* MainViewController.swift in Sources */,
 				CD51842024299C0A0019FC51 /* MatchesViewContraint.swift in Sources */,
+				CD518424242A762A0019FC51 /* RotateImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

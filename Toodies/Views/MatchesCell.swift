@@ -42,6 +42,14 @@ class MatchesCell: UITableViewCell {
         return image
     }()
     
+    let seperatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
+        return view
+
+    }()
+    
 
     func setup(){
             setupSubview()
@@ -51,27 +59,30 @@ class MatchesCell: UITableViewCell {
         func setupSubview() {
             addSubview(titleLabel)
             addSubview(imageLabel)
+            addSubview(seperatorView)
         }
         
         func setupConstraints() {
             
             titleLabel.translatesAutoresizingMaskIntoConstraints = false
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 70).isActive = true
+            titleLabel.topAnchor.constraint(equalTo: imageLabel.bottomAnchor, constant: 30).isActive = true
             titleLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
             titleLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
-            titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
-            titleLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 10).isActive = true
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 10).isActive = true
             
             imageLabel.translatesAutoresizingMaskIntoConstraints = false
-//            imageLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 10).isActive = true
-            imageLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
+            imageLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+            imageLabel.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
             imageLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
 //            imageLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
             imageLabel.contentMode = .scaleAspectFit
             imageLabel.layer.cornerRadius = 20
             
+            seperatorView.translatesAutoresizingMaskIntoConstraints = false
+            seperatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+            seperatorView.widthAnchor.constraint(equalToConstant: 450).isActive = true
+            seperatorView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: 0).isActive = true
         }
     
 }

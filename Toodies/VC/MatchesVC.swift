@@ -13,7 +13,7 @@ class MatchesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var matchesView = MatchesView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         self.title = "Matches"
         print("Matches")
         setup()
@@ -40,9 +40,12 @@ class MatchesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MatchesCell
+            let backgroundView = UIView()
+            backgroundView.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+            cell.selectedBackgroundView = backgroundView
             cell.titleLabel.text = restaurants[indexPath.row]
             cell.imageLabel.image = UIImage(named: images[indexPath.row])
-            cell.backgroundColor = #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)
+            cell.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
 
             return cell
         }
